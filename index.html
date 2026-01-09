@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Template</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+<h1 id="output"></h1>
+
+<script>
+  const templates = [
+    "image1.png",
+    "image2.png",
+    "image3.png",
+    "image4.png"
+  ];
+
+  const randomIndex = Math.floor(Math.random() * templates.length);
+  document.getElementById("output").innerText = templates[randomIndex];
+</script>
+
+</body>
+</html>
