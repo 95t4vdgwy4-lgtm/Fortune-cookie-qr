@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Random Template</title>
+  <title>CNY Wishes QR Image</title>
   <meta charset="UTF-8">
 </head>
 
-<body>
+<body style="text-align:center;">
 
-<h1 id="output"></h1>
+<h2>Here is your image</h2>
+
+<img id="randomImage" src="" style="max-width:90%; height:auto;" />
 
 <script>
-  const templates = [
+  const Images = [
     "Image1.png",
     "Image2.png",
     "Image3.png",
     "Image4.png"
   ];
 
-  const randomIndex = Math.floor(Math.random() * templates.length);
-  document.getElementById("output").innerText = templates[randomIndex];
+  const randomIndex = Math.floor(Math.random() * images.length);
+  document.getElementById("randomImage").src = images[randomIndex];
 </script>
 
 </body>
